@@ -1,0 +1,48 @@
+Sat 03:05: ########################################## 
+Sat 03:05: Compiling.
+Sat 03:05: ########################################## 
+
+Sat 03:05: MaxCompiler version: 2015.1.1 (simulation only).
+Sat 03:05: Build Simulation run rule for assignment-chap02-exercise3-sobel-gaussian start time: Sat Jan 09 03:05:02 PST 2016.
+Sat 03:05: Project location: /home/demo/Desktop/gaussian.
+Sat 03:05: Detailed build log: /home/demo/Desktop/gaussian/RunRules/Simulation/build.log.
+
+Sat 03:05: Compiling Engine Code.
+Sat 03:05: Engine building skipped (no changes on .max files).
+Sat 03:05: Compiling CPU Code.
+Sat 03:05: Run CPU project make files updating
+Sat 03:05: Executing command:
+Sat 03:05: java -jar /opt/maxeler/maxcompiler/lib/MaxIDE/projectAdmin.jar -u /home/demo/Desktop/gaussian Simulation 
+Sat 03:05: Command output:
+
+Sat 03:05: MaxCompiler Project Admin Tool Version 2015.1.10001
+Sat 03:05:  Copyright Maxeler Technologies 2010 - 2015. All rights reserved.
+Sat 03:05: Handler version 1
+Sat 03:05: Updating RunRule dependent Makefiles for RunRule 'Simulation'
+Sat 03:05: Found makefiles: 1
+Sat 03:05: 	Updated: Simulation
+Sat 03:05: Run CPU make.
+Sat 03:05: make RUNRULE=Simulation 
+Sat 03:05: Command output:
+Sat 03:05: make -f Makefile ../RunRules/Simulation/binaries/SobelGaussian
+Sat 03:05: make[1]: Entering directory `/home/demo/Desktop/gaussian/CPUCode'
+Sat 03:05: cc -g -O3 -Wall -Wextra -fmessage-length=0 -I ../RunRules/Simulation/include -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic -D_XOPEN_SOURCE=600  -std=c99 -DBUILDNAME_MAXFILE_1=SobelGaussian -DMAXFILE_1="SobelGaussian.max"  -o "../RunRules/Simulation/objects/SobelGaussianCpuCode.o" -c "SobelGaussianCpuCode.c"
+Sat 03:05: cc -g -O3 -Wall -Wextra -fmessage-length=0 -I ../RunRules/Simulation/include -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic -D_XOPEN_SOURCE=600  -std=c99 -DBUILDNAME_MAXFILE_1=SobelGaussian -DMAXFILE_1="SobelGaussian.max"  -MM -MP -MT "../RunRules/Simulation/objects/SobelGaussianCpuCode.o" "SobelGaussianCpuCode.c" > "../RunRules/Simulation/objects/SobelGaussianCpuCode.d"
+Sat 03:05: cc ../RunRules/Simulation/objects/SobelGaussianCpuCode.o ../RunRules/Simulation/objects/ppmIO.o ../RunRules/Simulation/objects/slic_SobelGaussian.o  -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread  -o "../RunRules/Simulation/binaries/SobelGaussian"
+Sat 03:05: make[1]: Leaving directory `/home/demo/Desktop/gaussian/CPUCode'
+Sat 03:05: Build completed: Sat Jan 09 03:05:04 PST 2016
+
+
+Sat 03:05: ########################################## 
+Sat 03:05: Running
+Sat 03:05: ########################################## 
+Sat 03:05: Executing command:
+Sat 03:05: '/home/demo/Desktop/gaussian/RunRules/Simulation/binaries/SobelGaussian' 
+Sat 03:05: Command output:
+
+Sat 03:05: Obrada na kartici zavrsena.
+Sat 03:05: Vreme obrade: 2 s, 646100378 ns 
+Sat 03:05: Gaussian Noise FIlter na CPU zavrsen.
+Sat 03:05: Vreme obrade: 0 s, 44230756 ns 
+
+Sat 03:05: Process terminated with exit code 0.

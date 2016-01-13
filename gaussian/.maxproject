@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maxCompilerManager>
+<enginePart internalEngineSubproject="assignment-chap02-exercise3-sobel-gaussian_EngineCode" isSrcBin="false" isUseDefaultSelected="false" outputLocation="/assignment-chap02-exercise3-sobel-gaussian_EngineCode/bin" projectName="assignment-chap02-exercise3-sobel-gaussian"/>
+<cpuPart internalCpuSubproject="assignment-chap02-exercise3-sobel-gaussian_CPUCode"/>
+<watchedFiles/>
+</maxCompilerManager>

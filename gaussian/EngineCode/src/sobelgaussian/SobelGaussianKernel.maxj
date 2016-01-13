@@ -1,0 +1,29 @@
+/***********************
+ * GAUSSIAN NOISE FILTER
+ * NADA JANKOVIC 468/12
+ * MIPS
+ ***********************/
+
+package sobelgaussian;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+
+class SobelGaussianKernel extends Kernel {
+
+	protected SobelGaussianKernel(KernelParameters parameters) {
+		super(parameters);
+
+		DFEVar inImage = io.input("inImage", dfeInt(32));
+		DFEVar noise = io.input("noise", dfeFloat(8,24));
+
+		noise = (noise > 255)?constant.var(255):noise;
+		noise = (noise < 0)?constant.var(0):noise;
+
+		noise += constant.var(0.5);
+
+		DFEVar result = noise.cast(dfeInt(32)) + inImage;
+		io.output("outImage", result, dfeInt(32));
+	}
+}
